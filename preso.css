@@ -1,0 +1,93 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 100px 0 0 0;
+  background: #000;
+  color: #999;
+}
+
+a {
+  color: #faa;
+}
+
+i {
+  color: #ff0;
+  font-style: normal;
+}
+
+b {
+  color: #aaf;
+  font-weight: normal;
+}
+
+q {
+  color: #fff;
+  quotes: none;
+}
+
+ul#main {
+  text-align: left;
+  padding: 0;
+  height: 0;
+  margin: 0 auto;
+}
+
+ul#main, ul#main li {
+  font-family: Monaco, 'courier new', courier, monospaced;
+  white-space: pre;
+  list-style: none;
+  padding: 0;
+  width: 700px;
+}
+
+ul#main li {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+ul#main li.closed {
+  font-size: 0px;
+  opacity: 0;
+}
+
+ul#main li.open {
+  font-size: 18px;
+  opacity: 1;
+  z-index: 8675309;
+}
+
+.huge {
+  font-size: 150%;
+}
+
+code {
+  display: block;
+  border: 1px solid yellow;
+  width: 740px;
+  height: 440px;
+  padding: 10px;
+  overflow: auto;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.closed, .open {
+  -moz-transition-property: all;
+  -moz-transition-duration: .5s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .5s;
+  transition-property: all;
+  transition-duration: .5s;
+}
+
+
+::selection {
+  background: #ff0;
+  color: #000;
+}
+
+::-moz-selection {
+  background: #ff0;
+  color: #000;
+}
